@@ -1,0 +1,266 @@
+.more-container {
+  background: #f3f3f3;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.more-container h2 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.quick-actions-section {
+  margin-bottom: 24px;
+}
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.quick-action-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.quick-action-card:hover {
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 12px auto;
+  color: white;
+}
+
+.action-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.services-section,
+.help-section,
+.settings-section,
+.app-info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item:hover {
+  background: #f8f9fa;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+.service-info h4 {
+  margin: 0 0 4px 0;
+  color: #333;
+}
+
+.service-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.service-arrow {
+  color: #999;
+  font-size: 18px;
+}
+
+.help-topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.help-topic {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.help-topic:hover {
+  background: #e9ecef;
+}
+
+.help-icon {
+  width: 24px;
+  height: 24px;
+  background: #ff9900;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.topic-name {
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-support {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.contact-support h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+}
+
+.contact-btn {
+  background: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.setting-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.setting-option span {
+  color: #333;
+  font-weight: 500;
+}
+
+.setting-option select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ff9900;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.app-info {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.app-info p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.legal-links span {
+  color: #007185;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.legal-links span:hover {
+  color: #c7511f;
+}
